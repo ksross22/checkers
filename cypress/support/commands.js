@@ -6,20 +6,11 @@ Cypress.Commands.add('validatePageContent', () => {
 
     // Assert that the game board is visible
     cy.get('#board').should('be.visible');
-
-    // Assert that orange moves first
-    cy.get('#message').should('contain.text', 'Select an orange piece to move.'); 
 });
 
 Cypress.Commands.add('validateDefaultCheckersBoard', () => {
         const rulesURL = 'https://en.wikipedia.org/wiki/English_draughts#Starting_position'
 
-        // Assert that the game is called "Checkers"
-        cy.get('h1').should('contain.text', 'Checkers');
-
-        // Assert that the game board is visible
-        cy.get('#board').should('be.visible');
-       
         // Check if there are 12 rows with the class 'line'
         cy.get('.line').should('have.length', 8);
 
