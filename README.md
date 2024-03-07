@@ -25,6 +25,8 @@ By default, tests will run in the Electron browser. To specify a different brows
 
 For more options and configurations, refer to the Cypress documentation: [Cypress Configuration](https://docs.cypress.io/guides/references/configuration.html)
 
+ ## Additional Details and Testing Notes
+
 **Scenarios Covered:**
 - Navigating to the page loads a new checkers board
     - Validating that there is correct text on the page
